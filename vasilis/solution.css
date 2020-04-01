@@ -1,0 +1,32 @@
+
+* {
+    box-sizing: border-box;
+}
+.row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   text-align: center;
+   
+  
+}
+
+.column {
+    height: 600px;
+}
+@media screen and (max-width: 600px) {
+
+    .column {
+    width: 100%;
+}
+}
+@media screen and (min-width: 601px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .column {
+        width: 25%;
+    }
+}
