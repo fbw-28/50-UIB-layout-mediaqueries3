@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 24%;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .column {
+        flex-basis: 48%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        flex-basis: 100%
+    }
+}
